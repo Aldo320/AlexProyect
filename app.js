@@ -54,6 +54,12 @@ for (let i = 1; i <= 20; i++) {
   
 solicitarNombre ()
 
+function saludar (nombre, apellido){
+    console.log(`Hola ${nombre} ${apellido}`)
+} 
+
+saludar ()
+
 
 function iniciarApp() {
     console.log("Iniciando App...")
