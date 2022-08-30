@@ -1,13 +1,3 @@
-
-solicitarNombre ()
-function solicitarNombre() {
-    let nombre=prompt ("Ingrese Su Nombre")
-    console.log (`El Nombre De Usuario Es: ${Nombre}`) 
-  }
-
-  function saludar (nombre, apellido){
-    console.log(`Hola ${nombre} ${apellido}`)
-
 let option = prompt (`Elja Tu Marca de Calzado Favorita:
 1:Nike
 2:Adidas
@@ -57,29 +47,59 @@ for (let i = 1; i <= 20; i++) {
   alert(`${numero} x ${i} = ${resultado}`);}
 
 
-let primerNumero = 0
-let segundoNumero = 0
+  function solicitarNombre() {
+    let Nombre=prompt ("Ingrese Su Nombre")
+    console.log (`El Nombre De Usuario Es: ${Nombre}`) 
+  }
+  
+solicitarNombre ()
 
-function calculadora (primerNumero, segundoNumero, operacion){
-    switch (operacion)
-    {
-        case "+"
-        return primerNumero  segundoNumero
-        break
-        case "-"
-        return primerNumero - segundoNumero
-        break
-        case "*"
-        return primerNumero * segundoNumero;
-        break
-        case "/"
-        return primerNumero / segundoNumero
-        break
-        default
-        return 0
-        break
-    }
 
-    console.log calculadora((20, 30, "+"))
+function iniciarApp() {
+    console.log("Iniciando App...")
+
+}
+
+iniciarApp()
+
+
+function segundaFuncion (){
+    console.log("Desde la segunda función") 
+}
+
+    segundaFuncion()
 
     
+function usuarioautenticado (){
+    console.log("Autenticando Usuario... Espere...")
+    console.log("Usuario Autenticado Exitosamente")
+}
+
+    usuarioautenticado()
+
+
+let primerNumero = 0
+    let segundoNumero = 0
+
+    function calculadora (primerNumero, segundoNumero, operacion)
+        switch (operacion){
+            case "+"
+            return primerNumero + segundoNumero;
+            break
+            case "-"
+            return primerNumero - segundoNumero;
+            break
+            case "*"
+            return primerNumero * segundoNumero;
+            break
+            case "/"
+            return primerNumero / segundoNumero
+            break
+            default
+            return 0
+            break
+        }
+            
+        console.log calculadora((20, 30, "+"))
+
+  
